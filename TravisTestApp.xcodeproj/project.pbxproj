@@ -14,7 +14,18 @@
 		BF256018202F705300DB93DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF256017202F705300DB93DC /* Assets.xcassets */; };
 		BF25601B202F705300DB93DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF256019202F705300DB93DC /* LaunchScreen.storyboard */; };
 		BF25601E202F705300DB93DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF25601D202F705300DB93DC /* main.m */; };
+		BF25602D202F796D00DB93DC /* TravisTestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF25602C202F796D00DB93DC /* TravisTestAppTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF25602F202F796D00DB93DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF256003202F705300DB93DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF25600A202F705300DB93DC;
+			remoteInfo = TravisTestApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5FEC416F8546B1EDBA8639D2 /* Pods-TravisTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravisTestApp/Pods-TravisTestApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -31,6 +42,9 @@
 		BF25601C202F705300DB93DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF25601D202F705300DB93DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF256024202F717100DB93DC /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		BF25602A202F796D00DB93DC /* TravisTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF25602C202F796D00DB93DC /* TravisTestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravisTestAppTests.m; sourceTree = "<group>"; };
+		BF25602E202F796D00DB93DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +53,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				34AC9413C5DC602A7C98C62E /* Pods_TravisTestApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF256027202F796D00DB93DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +79,7 @@
 			children = (
 				BF256024202F717100DB93DC /* .travis.yml */,
 				BF25600D202F705300DB93DC /* TravisTestApp */,
+				BF25602B202F796D00DB93DC /* TravisTestAppTests */,
 				BF25600C202F705300DB93DC /* Products */,
 				C23898BDC289964033D34527 /* Pods */,
 				75E25BD8A9FE526AE17C7DAD /* Frameworks */,
@@ -68,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				BF25600B202F705300DB93DC /* TravisTestApp.app */,
+				BF25602A202F796D00DB93DC /* TravisTestAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +109,15 @@
 				BF25601D202F705300DB93DC /* main.m */,
 			);
 			path = TravisTestApp;
+			sourceTree = "<group>";
+		};
+		BF25602B202F796D00DB93DC /* TravisTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF25602C202F796D00DB93DC /* TravisTestAppTests.m */,
+				BF25602E202F796D00DB93DC /* Info.plist */,
+			);
+			path = TravisTestAppTests;
 			sourceTree = "<group>";
 		};
 		C23898BDC289964033D34527 /* Pods */ = {
@@ -120,6 +152,24 @@
 			productReference = BF25600B202F705300DB93DC /* TravisTestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BF256029202F796D00DB93DC /* TravisTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF256033202F796D00DB93DC /* Build configuration list for PBXNativeTarget "TravisTestAppTests" */;
+			buildPhases = (
+				BF256026202F796D00DB93DC /* Sources */,
+				BF256027202F796D00DB93DC /* Frameworks */,
+				BF256028202F796D00DB93DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF256030202F796D00DB93DC /* PBXTargetDependency */,
+			);
+			name = TravisTestAppTests;
+			productName = TravisTestAppTests;
+			productReference = BF25602A202F796D00DB93DC /* TravisTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -132,6 +182,11 @@
 					BF25600A202F705300DB93DC = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					BF256029202F796D00DB93DC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BF25600A202F705300DB93DC;
 					};
 				};
 			};
@@ -149,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				BF25600A202F705300DB93DC /* TravisTestApp */,
+				BF256029202F796D00DB93DC /* TravisTestAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -161,6 +217,13 @@
 				BF25601B202F705300DB93DC /* LaunchScreen.storyboard in Resources */,
 				BF256018202F705300DB93DC /* Assets.xcassets in Resources */,
 				BF256016202F705300DB93DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF256028202F796D00DB93DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +291,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF256026202F796D00DB93DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF25602D202F796D00DB93DC /* TravisTestAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF256030202F796D00DB93DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF25600A202F705300DB93DC /* TravisTestApp */;
+			targetProxy = BF25602F202F796D00DB93DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BF256014202F705300DB93DC /* Main.storyboard */ = {
@@ -382,6 +461,34 @@
 			};
 			name = Release;
 		};
+		BF256031202F796D00DB93DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TravisTestAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.warnyul.TravisTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravisTestApp.app/TravisTestApp";
+			};
+			name = Debug;
+		};
+		BF256032202F796D00DB93DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TravisTestAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.warnyul.TravisTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravisTestApp.app/TravisTestApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -399,6 +506,15 @@
 			buildConfigurations = (
 				BF256022202F705300DB93DC /* Debug */,
 				BF256023202F705300DB93DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF256033202F796D00DB93DC /* Build configuration list for PBXNativeTarget "TravisTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF256031202F796D00DB93DC /* Debug */,
+				BF256032202F796D00DB93DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
