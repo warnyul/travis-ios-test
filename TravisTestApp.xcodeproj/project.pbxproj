@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		47012B74442860AC348F7D5E /* libPods-TravisTestApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8C9D6405BD46DF36D7F233 /* libPods-TravisTestApp.a */; };
+		34AC9413C5DC602A7C98C62E /* Pods_TravisTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936CBF3C11AB62537B1F5F7A /* Pods_TravisTestApp.framework */; };
 		BF256010202F705300DB93DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF25600F202F705300DB93DC /* AppDelegate.m */; };
 		BF256013202F705300DB93DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF256012202F705300DB93DC /* ViewController.m */; };
 		BF256016202F705300DB93DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF256014202F705300DB93DC /* Main.storyboard */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		5FEC416F8546B1EDBA8639D2 /* Pods-TravisTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravisTestApp/Pods-TravisTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		6A1B57622AFB2510DEB34F51 /* Pods-TravisTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravisTestApp/Pods-TravisTestApp.debug.xcconfig"; sourceTree = "<group>"; };
-		8A8C9D6405BD46DF36D7F233 /* libPods-TravisTestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravisTestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		936CBF3C11AB62537B1F5F7A /* Pods_TravisTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF25600B202F705300DB93DC /* TravisTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF25600E202F705300DB93DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF25600F202F705300DB93DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -30,6 +30,7 @@
 		BF25601A202F705300DB93DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF25601C202F705300DB93DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF25601D202F705300DB93DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF256024202F717100DB93DC /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47012B74442860AC348F7D5E /* libPods-TravisTestApp.a in Frameworks */,
+				34AC9413C5DC602A7C98C62E /* Pods_TravisTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +48,7 @@
 		75E25BD8A9FE526AE17C7DAD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8A8C9D6405BD46DF36D7F233 /* libPods-TravisTestApp.a */,
+				936CBF3C11AB62537B1F5F7A /* Pods_TravisTestApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -55,6 +56,7 @@
 		BF256002202F705300DB93DC = {
 			isa = PBXGroup;
 			children = (
+				BF256024202F717100DB93DC /* .travis.yml */,
 				BF25600D202F705300DB93DC /* TravisTestApp */,
 				BF25600C202F705300DB93DC /* Products */,
 				C23898BDC289964033D34527 /* Pods */,
